@@ -30,6 +30,9 @@
         a:hover {
             color: rgb(0, 105, 224);
         }
+        #unitID * {
+            background-color: rgba(31,41,55,var(--tw-bg-opacity)) ;
+        }
     </style>
 </head>
 
@@ -37,161 +40,154 @@
     <div class="w-full h-full bg-gray-800 absolute flex flex-row justify-center items-center">
         <div class="bg-gray-300 m-auto shadow-lg p-5 rounded w-1/4 h-auto mwh">
             <div class="flex flex-col justify-start w-full h-full items-center">
-                <!--TEXT-->
-                <div class="flex flex-row items-center h-14 rounded border-gray-900 bg-gray-800 border-1 text-white mb-2 w-full">
-                    <a class="flex-2 p-2 block flex flex-row items-center justify-center hover:bg-gray-700 h-full" href="https://github.com/zxing/zxing/wiki/Barcode-Contents" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                             aria-hidden="true" role="img" width="1em" height="1em"
-                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="width: 1em !important; height: 1em !important;">
-                            <g fill="none">
-                                <path
-                                    d="M13 22h-3v-3h3v3zm0-5h-3v-.007c0-1.65 0-3.075.672-4.073a6.304 6.304 0 0 1 1.913-1.62c.334-.214.649-.417.914-.628a3.712 3.712 0 0 0 1.332-3.824A3.033 3.033 0 0 0 9 8H6a6 6 0 0 1 6-6a6.04 6.04 0 0 1 5.434 3.366a6.017 6.017 0 0 1-.934 6.3c-.453.502-.96.95-1.514 1.337a7.248 7.248 0 0 0-1.316 1.167A4.23 4.23 0 0 0 13 17z"
-                                    fill="currentColor" />
-                            </g>
-                        </svg>
-                    </a>
-                      <select 
-                        class="h-full pr-4 pl-1 flex-1 text-current bg-transparent focus:outline-none" id="unitID" name="unitID"> 
-			<option value="1" style="display:none">Select Unit</option>
-			<option value="3">Council</option>
-                        <optgroup label="Apache">
-                        <option value="4">Pack 0001</option>
-                        <option value="5">Pack 0003</option>
-                        <option value="7">Pack 0008</option>
-                        <option value="8">Pack 0009</option>
-                        <option value="9">Pack 0011</option>
-                        <option value="10">Pack 0034</option>
-                        <option value="11">Pack 0055</option>
-                        <option value="12">Pack 0079</option>
-                        <option value="13">Pack 0116</option>
-                        <option value="14">Pack 0119</option>
-                        <option value="15">Pack 0167</option>
-                        <option value="16">Pack 0174</option>
-                        <option value="17">Pack 0249</option>
-                        <option value="18">Pack 0256</option>
-                        <option value="19">Pack 0265</option>
-                        <option value="20">Pack 0405</option>
-                        <option value="21">Pack 0502</option>
-                        <option value="22">Pack 0613</option>
-                        <option value="23">Troop 0001</option>
-                        <option value="24">Troop 0003</option>
-                        <option value="25">Troop 0007</option>
-                        <option value="26">Troop 0008</option>
-                        <option value="27">Troop 0009</option>
-                        <option value="28">Troop 0011</option>
-                        <option value="29">Troop 0024</option>
-                        <option value="30">Troop 0034</option>
-                        <option value="31">Troop 0045</option>
-                        <option value="32">Troop 0055</option>
-                        <option value="33">Troop 0079</option>
-                        <option value="34">Troop 0099</option>
-                        <option value="35">Troop 0111</option>
-                        <option value="36">Troop 0116</option>
-                        <option value="37">Troop 0119</option>
-                        <option value="38">Troop 0165</option>
-                        <option value="39">Troop 0167</option>
-                        <option value="40">Troop 0174</option>
-                        <option value="41">Troop 0219</option>
-                        <option value="42">Troop 0249</option>
-                        <option value="43">Troop 0256</option>
-                        <option value="44">Troop 0288</option>
-                        <option value="45">Troop 0355</option>
-                        <option value="46">Troop 0405</option>
-                        <option value="47">Troop 0502</option>
-                        <option value="48">Crew 0011</option>
-                        <option value="49">Crew 0167</option>
-                        </optgroup> 
-                        <optgroup label="Etowah">
-                        <option value="50">Pack 0015</option>
-                        <option value="51">Pack 0033</option>
-                        <option value="52">Pack 0046</option>
-                        <option value="53">Pack 0065</option>
-                        <option value="54">Pack 0118</option>
-                        <option value="55">Pack 0140</option>
-                        <option value="56">Pack 0144</option>
-                        <option value="57">Pack 0164</option>
-                        <option value="58">Pack 0214</option>
-                        <option value="59">Pack 0490</option>
-                        <option value="60">Troop 0015</option>
-                        <option value="61">Troop 0033</option>
-                        <option value="62">Troop 0039</option>
-                        <option value="63">Troop 0046</option>
-                        <option value="64">Troop 0065</option>
-                        <option value="65">Troop 0114</option>
-                        <option value="66">Troop 0118</option>
-                        <option value="67">Troop 0133</option>
-                        <option value="68">Troop 0139</option>
-                        <option value="69">Troop 0140</option>
-                        <option value="70">Troop 0144</option>
-                        <option value="71">Troop 0146</option>
-                        <option value="72">Troop 0164</option>
-                        <option value="73">Troop 0233</option>
-                        <option value="74">Troop 0490</option>
-                        <option value="75">Crew 1465</option>
-                        </optgroup> 
-                        <optgroup label="Hornets Nest">
-                        <option value="76">Post 0237</option>
-                        <option value="77">Post 0247</option>
-                        <option value="78">Pack 0010</option>
-                        <option value="79">Pack 0013</option>
-                        <option value="80">Pack 0019</option>
-                        <option value="81">Pack 0025</option>
-                        <option value="82">Pack 0042</option>
-                        <option value="83">Pack 0049</option>
-                        <option value="84">Pack 0051</option>
-                        <option value="85">Pack 0058</option>
-                        <option value="86">Pack 0063</option>
-                        <option value="87">Pack 0067</option>
-                        <option value="88">Pack 0070</option>
-                        <option value="89">Pack 0072</option>
-                        <option value="90">Pack 0097</option>
-                        <option value="91">Pack 0107</option>
-                        <option value="92">Pack 0148</option>
-                        <option value="93">Pack 0152</option>
-                        <option value="94">Pack 0186</option>
-                        <option value="95">Pack 0200</option>
-                        <option value="96">Pack 0222</option>
-                        <option value="97">Pack 0321</option>
-                        <option value="98">Pack 0323</option>
-                        <option value="99">Pack 0865</option>
-                        <option value="100">Pack 1825</option>
-                        <option value="101">Pack 1906</option>
-                        <option value="102">Pack 1911</option>
-                        <option value="103">Pack 2287</option>
-                        <option value="104">Pack 4005</option>
-                        <option value="105">Troop 0010</option>
-                        <option value="106">Troop 0013</option>
-                        <option value="107">Troop 0019</option>
-                        <option value="108">Troop 0025</option>
-                        <option value="109">Troop 0042</option>
-                        <option value="110">Troop 0049</option>
-                        <option value="111">Troop 0051</option>
-                        <option value="112">Troop 0058</option>
-                        <option value="113">Troop 0063</option>
-                        <option value="114">Troop 0067</option>
-                        <option value="115">Troop 0070</option>
-                        <option value="116">Troop 0072</option>
-                        <option value="117">Troop 0087</option>
-                        <option value="118">Troop 0097</option>
-                        <option value="119">Troop 0107</option>
-                        <option value="120">Troop 0148</option>
-                        <option value="121">Troop 0186</option>
-                        <option value="122">Troop 0200</option>
-                        <option value="123">Troop 0222</option>
-                        <option value="124">Troop 0248</option>
-                        <option value="125">Troop 0321</option>
-                        <option value="126">Troop 0323</option>
-                        <option value="127">Troop 1906</option>
-                        <option value="128">Troop 2287</option>
-                        <option value="129">Crew 0019</option>
-                        <option value="130">Crew 0058</option>
-                        <option value="131">Crew 0321</option>
-                        <option value="132">Ship 0019</option>
-                        </optgroup> 
-		</select>
-                </div>
-                <!--WIFI-->
                 <div class="flex flex-row items-center h-14 pl-1 rounded border-gray-900 bg-gray-800 border-1 text-white mb-2 w-full max-w-full">
+                    <select class="h-full pr-4 pl-1 bg-transparent text-white bg-grey-800 w-full"
+                     id="unitID" name="unitID"> 
+	  	      <option value="1" style="display:none">Select Unit</option>
+                      <option value="4">Council</option>
+                      <option value="5">Pack 0001</option>
+                      <option value="6">Pack 0003</option>
+                      <option value="7">Pack 0007</option>
+<option value="8">Pack 0008</option>
+<option value="9">Pack 0009</option>
+<option value="10">Pack 0010</option>
+<option value="11">Pack 0011</option>
+<option value="12">Pack 0013</option>
+<option value="13">Pack 0015</option>
+<option value="14">Pack 0019</option>
+<option value="15">Pack 0025</option>
+<option value="16">Pack 0033</option>
+<option value="17">Pack 0034</option>
+<option value="18">Pack 0042</option>
+<option value="19">Pack 0046</option>
+<option value="20">Pack 0049</option>
+<option value="21">Pack 0051</option>
+<option value="22">Pack 0055</option>
+<option value="23">Pack 0058</option>
+<option value="24">Pack 0063</option>
+<option value="25">Pack 0065</option>
+<option value="26">Pack 0067</option>
+<option value="27">Pack 0070</option>
+<option value="28">Pack 0072</option>
+<option value="29">Pack 0079</option>
+<option value="30">Pack 0097</option>
+<option value="31">Pack 0107</option>
+<option value="32">Pack 0116</option>
+<option value="33">Pack 0118</option>
+<option value="34">Pack 0119</option>
+<option value="35">Pack 0140</option>
+<option value="36">Pack 0144</option>
+<option value="37">Pack 0148</option>
+<option value="38">Pack 0152</option>
+<option value="39">Pack 0164</option>
+<option value="40">Pack 0167</option>
+<option value="41">Pack 0174</option>
+<option value="42">Pack 0186</option>
+<option value="43">Pack 0200</option>
+<option value="44">Pack 0214</option>
+<option value="45">Pack 0222</option>
+<option value="46">Pack 0249</option>
+<option value="47">Pack 0256</option>
+<option value="48">Pack 0265</option>
+<option value="49">Pack 0321</option>
+<option value="50">Pack 0323</option>
+<option value="51">Pack 0405</option>
+<option value="52">Pack 0490</option>
+<option value="53">Pack 0502</option>
+<option value="54">Pack 0613</option>
+<option value="55">Pack 0865</option>
+<option value="56">Pack 1825</option>
+<option value="57">Pack 1906</option>
+<option value="58">Pack 1911</option>
+<option value="59">Pack 2287</option>
+<option value="60">Pack 4005</option>
+<option value="61">Troop 0001</option>
+<option value="62">Troop 0003</option>
+<option value="63">Troop 0003G</option>
+<option value="64">Troop 0007</option>
+<option value="65">Troop 0008</option>
+<option value="66">Troop 0009</option>
+<option value="67">Troop 0010</option>
+<option value="68">Troop 0011</option>
+<option value="69">Troop 0013</option>
+<option value="70">Troop 0015</option>
+<option value="71">Troop 0019</option>
+<option value="72">Troop 0019G</option>
+<option value="73">Troop 0024</option>
+<option value="74">Troop 0024G</option>
+<option value="75">Troop 0025</option>
+<option value="76">Troop 0033</option>
+<option value="77">Troop 0034</option>
+<option value="78">Troop 0039</option>
+<option value="79">Troop 0042</option>
+<option value="80">Troop 0045</option>
+<option value="81">Troop 0046</option>
+<option value="82">Troop 0049</option>
+<option value="83">Troop 0051</option>
+<option value="84">Troop 0055</option>
+<option value="85">Troop 0058</option>
+<option value="86">Troop 0058G</option>
+<option value="87">Troop 0063</option>
+<option value="88">Troop 0065</option>
+<option value="89">Troop 0067</option>
+<option value="90">Troop 0070</option>
+<option value="91">Troop 0070G</option>
+<option value="92">Troop 0072</option>
+<option value="93">Troop 0079</option>
+<option value="94">Troop 0087</option>
+<option value="95">Troop 0097</option>
+<option value="96">Troop 0099</option>
+<option value="97">Troop 0107</option>
+<option value="98">Troop 0111G</option>
+<option value="99">Troop 0114</option>
+<option value="100">Troop 0116</option>
+<option value="101">Troop 0118</option>
+<option value="102">Troop 0119</option>
+<option value="103">Troop 0133</option>
+<option value="104">Troop 0139</option>
+<option value="105">Troop 0140</option>
+                      <option value="106">Troop 0144</option>
+                      <option value="107">Troop 0146</option>
+                      <option value="108">Troop 0148</option>
+                      <option value="109">Troop 0164</option>
+                      <option value="110">Troop 0165</option>
+                      <option value="111">Troop 0167</option>
+                      <option value="112">Troop 0167G</option>
+                      <option value="113">Troop 0174</option>
+                      <option value="114">Troop 0186</option>
+                      <option value="115">Troop 0200</option>
+                      <option value="116">Troop 0219</option>
+                      <option value="117">Troop 0222</option>
+                      <option value="118">Troop 0222G</option>
+                      <option value="119">Troop 0233</option>
+                      <option value="120">Troop 0248</option>
+                      <option value="121">Troop 0249</option>
+                      <option value="122">Troop 0249G</option>
+                      <option value="123">Troop 0256</option>
+                      <option value="124">Troop 0256G</option>
+                      <option value="125">Troop 0288</option>
+                      <option value="126">Troop 0321</option>
+                      <option value="127">Troop 0321G</option>
+                      <option value="128">Troop 0323</option>
+                      <option value="129">Troop 0355</option>
+                      <option value="130">Troop 0405</option>
+                      <option value="131">Troop 0405G</option>
+                      <option value="132">Troop 0490</option>
+                      <option value="133">Troop 0502G</option>
+                      <option value="134">Troop 0502</option>
+                      <option value="135">Troop 1906</option>
+                      <option value="136">Troop 2287</option>
+                      <option value="137">Crew 0011</option>
+                      <option value="138">Crew 0019</option>
+                      <option value="139">Crew 0058</option>
+                      <option value="140">Crew 0167</option>
+                      <option value="141">Crew 0321</option>
+                      <option value="142">Crew 1465</option>
+                      <option value="143">Ship 0019</option>
+                    </select>
+                <!--
+               </div>
+                -->
                     <input type="text" placeholder="First Name"
                         class="h-full pl-1 text-current bg-transparent focus:outline-none w-full" id="firstName"
                         value="">
@@ -262,8 +258,6 @@
                 get: (searchParams, prop) => searchParams.get(prop),
             });
             
-            let btn = document.getElementById("genBtn")
-            let link = document.getElementById("linkBox")
             let qr = document.getElementById("qrcode");
 
             let genLinkBtn = document.getElementById("genLinkBtn")
@@ -271,18 +265,12 @@
             let lastName = document.getElementById("lastName")
             let unitID = document.getElementById("unitID")
 
-            // Standard QR
-            btn.onclick = () => {
-                qr.innerHTML = genSvg(link.value)
-                lastQuery = link.value
-            }
-
             // Wifi QR
             genLinkBtn.onclick = () => {
                 const firstN = firstName.value
                 const lastN = lastName.value
-                const unitID = unitID.value
-                const fullURL = `https://www.mccscouting.org/campcard?element_7_1=${firstN}&element_7_2=${lastN}&element6=${unitID}`
+                const unit = unitID.value;
+                const fullURL = `https://www.mccscouting.org/campcard?element_7_1=${firstN}&element_7_2=${lastN}&element_12=${unit}`
                 qr.innerHTML = genSvg(fullURL)
                 lastQuery = fullURL
             }
