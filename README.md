@@ -1,8 +1,8 @@
 # QR Code Generator for the Meclenburg County Council Camp Card Sale
 
-Generates QR codes to the online sales page with scout name and unit prefilled.
+Generates QR codes to the online sales page with scout name and unit fields of the form prefilled.
 
-Entirely based on the ![work](https://github.com/bizzycola/qrcode-generator) of ![bizzycola](https://github.com/bizzycola)
+Entirely based on the [work](https://github.com/bizzycola/qrcode-generator) of [bizzycola](https://github.com/bizzycola)
 
 
 # QR Code Generator UI
