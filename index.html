@@ -50,23 +50,157 @@
                             </g>
                         </svg>
                     </a>
-                    <input type="text" placeholder="Content"
-                        class="h-full pr-4 pl-1 flex-1 text-current bg-transparent focus:outline-none" id="linkBox"
-                        value="https://google.com">
-                    <button class="h-full flex-2 pr-2 pl-2 border-l-gray-900 border-l-1 hover:bg-gray-700"
-                        id="genBtn">Generate</button>
+                      <select 
+                        class="h-full pr-4 pl-1 flex-1 text-current bg-transparent focus:outline-none" id="unitID" name="unitID"> 
+			<option value="1" style="display:none">Select Unit</option>
+			<option value="3">Council</option>
+                        <optgroup label="Apache">
+                        <option value="4">Pack 0001</option>
+                        <option value="5">Pack 0003</option>
+                        <option value="7">Pack 0008</option>
+                        <option value="8">Pack 0009</option>
+                        <option value="9">Pack 0011</option>
+                        <option value="10">Pack 0034</option>
+                        <option value="11">Pack 0055</option>
+                        <option value="12">Pack 0079</option>
+                        <option value="13">Pack 0116</option>
+                        <option value="14">Pack 0119</option>
+                        <option value="15">Pack 0167</option>
+                        <option value="16">Pack 0174</option>
+                        <option value="17">Pack 0249</option>
+                        <option value="18">Pack 0256</option>
+                        <option value="19">Pack 0265</option>
+                        <option value="20">Pack 0405</option>
+                        <option value="21">Pack 0502</option>
+                        <option value="22">Pack 0613</option>
+                        <option value="23">Troop 0001</option>
+                        <option value="24">Troop 0003</option>
+                        <option value="25">Troop 0007</option>
+                        <option value="26">Troop 0008</option>
+                        <option value="27">Troop 0009</option>
+                        <option value="28">Troop 0011</option>
+                        <option value="29">Troop 0024</option>
+                        <option value="30">Troop 0034</option>
+                        <option value="31">Troop 0045</option>
+                        <option value="32">Troop 0055</option>
+                        <option value="33">Troop 0079</option>
+                        <option value="34">Troop 0099</option>
+                        <option value="35">Troop 0111</option>
+                        <option value="36">Troop 0116</option>
+                        <option value="37">Troop 0119</option>
+                        <option value="38">Troop 0165</option>
+                        <option value="39">Troop 0167</option>
+                        <option value="40">Troop 0174</option>
+                        <option value="41">Troop 0219</option>
+                        <option value="42">Troop 0249</option>
+                        <option value="43">Troop 0256</option>
+                        <option value="44">Troop 0288</option>
+                        <option value="45">Troop 0355</option>
+                        <option value="46">Troop 0405</option>
+                        <option value="47">Troop 0502</option>
+                        <option value="48">Crew 0011</option>
+                        <option value="49">Crew 0167</option>
+                        </optgroup> 
+                        <optgroup label="Etowah">
+                        <option value="50">Pack 0015</option>
+                        <option value="51">Pack 0033</option>
+                        <option value="52">Pack 0046</option>
+                        <option value="53">Pack 0065</option>
+                        <option value="54">Pack 0118</option>
+                        <option value="55">Pack 0140</option>
+                        <option value="56">Pack 0144</option>
+                        <option value="57">Pack 0164</option>
+                        <option value="58">Pack 0214</option>
+                        <option value="59">Pack 0490</option>
+                        <option value="60">Troop 0015</option>
+                        <option value="61">Troop 0033</option>
+                        <option value="62">Troop 0039</option>
+                        <option value="63">Troop 0046</option>
+                        <option value="64">Troop 0065</option>
+                        <option value="65">Troop 0114</option>
+                        <option value="66">Troop 0118</option>
+                        <option value="67">Troop 0133</option>
+                        <option value="68">Troop 0139</option>
+                        <option value="69">Troop 0140</option>
+                        <option value="70">Troop 0144</option>
+                        <option value="71">Troop 0146</option>
+                        <option value="72">Troop 0164</option>
+                        <option value="73">Troop 0233</option>
+                        <option value="74">Troop 0490</option>
+                        <option value="75">Crew 1465</option>
+                        </optgroup> 
+                        <optgroup label="Hornets Nest">
+                        <option value="76">Post 0237</option>
+                        <option value="77">Post 0247</option>
+                        <option value="78">Pack 0010</option>
+                        <option value="79">Pack 0013</option>
+                        <option value="80">Pack 0019</option>
+                        <option value="81">Pack 0025</option>
+                        <option value="82">Pack 0042</option>
+                        <option value="83">Pack 0049</option>
+                        <option value="84">Pack 0051</option>
+                        <option value="85">Pack 0058</option>
+                        <option value="86">Pack 0063</option>
+                        <option value="87">Pack 0067</option>
+                        <option value="88">Pack 0070</option>
+                        <option value="89">Pack 0072</option>
+                        <option value="90">Pack 0097</option>
+                        <option value="91">Pack 0107</option>
+                        <option value="92">Pack 0148</option>
+                        <option value="93">Pack 0152</option>
+                        <option value="94">Pack 0186</option>
+                        <option value="95">Pack 0200</option>
+                        <option value="96">Pack 0222</option>
+                        <option value="97">Pack 0321</option>
+                        <option value="98">Pack 0323</option>
+                        <option value="99">Pack 0865</option>
+                        <option value="100">Pack 1825</option>
+                        <option value="101">Pack 1906</option>
+                        <option value="102">Pack 1911</option>
+                        <option value="103">Pack 2287</option>
+                        <option value="104">Pack 4005</option>
+                        <option value="105">Troop 0010</option>
+                        <option value="106">Troop 0013</option>
+                        <option value="107">Troop 0019</option>
+                        <option value="108">Troop 0025</option>
+                        <option value="109">Troop 0042</option>
+                        <option value="110">Troop 0049</option>
+                        <option value="111">Troop 0051</option>
+                        <option value="112">Troop 0058</option>
+                        <option value="113">Troop 0063</option>
+                        <option value="114">Troop 0067</option>
+                        <option value="115">Troop 0070</option>
+                        <option value="116">Troop 0072</option>
+                        <option value="117">Troop 0087</option>
+                        <option value="118">Troop 0097</option>
+                        <option value="119">Troop 0107</option>
+                        <option value="120">Troop 0148</option>
+                        <option value="121">Troop 0186</option>
+                        <option value="122">Troop 0200</option>
+                        <option value="123">Troop 0222</option>
+                        <option value="124">Troop 0248</option>
+                        <option value="125">Troop 0321</option>
+                        <option value="126">Troop 0323</option>
+                        <option value="127">Troop 1906</option>
+                        <option value="128">Troop 2287</option>
+                        <option value="129">Crew 0019</option>
+                        <option value="130">Crew 0058</option>
+                        <option value="131">Crew 0321</option>
+                        <option value="132">Ship 0019</option>
+                        </optgroup> 
+		</select>
                 </div>
                 <!--WIFI-->
                 <div class="flex flex-row items-center h-14 pl-1 rounded border-gray-900 bg-gray-800 border-1 text-white mb-2 w-full max-w-full">
-                    <input type="text" placeholder="Wifi SSID"
-                        class="h-full pl-1 text-current bg-transparent focus:outline-none w-full" id="ssidBox"
+                    <input type="text" placeholder="First Name"
+                        class="h-full pl-1 text-current bg-transparent focus:outline-none w-full" id="firstName"
                         value="">
-                    <input type="password" placeholder="Password"
-                        class="h-full pl-1 text-current bg-transparent focus:outline-none w-full" id="pwdBox"
+                    <input type="text" placeholder="Last Name"
+                        class="h-full pl-1 text-current bg-transparent focus:outline-none w-full" id="lastName"
                         value="">
 
                     <button class="h-full pl-2 text-right pr-2 border-l-gray-900 border-l-1 hover:bg-gray-700 rounded-r-md"
-                        id="genWifiBtn">Generate</button>
+                        id="genLinkBtn">Generate</button>
                 </div>
                 <div id="qrcode" class="m-2"></div>
                 <!-- download links -->
@@ -91,7 +225,7 @@
     <script src="lib/qrcode.min.js"></script>
     <script type="module">
         import { Canvg } from 'https://cdn.skypack.dev/canvg@^4.0.0'
-        let lastQuery = 'https://google.com'
+        let lastQuery = 'https://www.mccscouting.org/campcard'
 
         const size = document.getElementById('imgSize')
 
@@ -132,9 +266,10 @@
             let link = document.getElementById("linkBox")
             let qr = document.getElementById("qrcode");
 
-            let genWifiBtn = document.getElementById("genWifiBtn")
-            let ssidBox = document.getElementById("ssidBox")
-            let pwdBox = document.getElementById("pwdBox")
+            let genLinkBtn = document.getElementById("genLinkBtn")
+            let firstName = document.getElementById("firstName")
+            let lastName = document.getElementById("lastName")
+            let unitID = document.getElementById("unitID")
 
             // Standard QR
             btn.onclick = () => {
@@ -143,13 +278,13 @@
             }
 
             // Wifi QR
-            genWifiBtn.onclick = () => {
-                const ssid = ssidBox.value
-                const pwd = pwdBox.value
-
-                const wifi = `WIFI:S:${ssid};H:true;T:WPA2;P:${pwd};;`
-                qr.innerHTML = genSvg(wifi)
-                lastQuery = wifi
+            genLinkBtn.onclick = () => {
+                const firstN = firstName.value
+                const lastN = lastName.value
+                const unitID = unitID.value
+                const fullURL = `https://www.mccscouting.org/campcard?element_7_1=${firstN}&element_7_2=${lastN}&element6=${unitID}`
+                qr.innerHTML = genSvg(fullURL)
+                lastQuery = fullURL
             }
 
             const qlink = params.link
